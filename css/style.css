@@ -1,0 +1,138 @@
+html, body {
+  background-color: black;
+  margin: 0px;
+  position: relative;
+  box-sizing: border-box;
+  overflow-y: hidden; // hide vertical;
+  overflow-x: hidden; // hide horizontal;
+}
+
+.color {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+#message, element.style {
+  font-size: 2.3em;
+  font-family: "Montserrat";
+  font-weight: 900;
+  color: white;
+  padding-left: 12%;
+  padding-right: 12%;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 3%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#theButton{
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: block;
+  font-weight: 100;
+}
+
+.footer {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  line-height: 5px;
+  font-size: 0.8em;
+  font-weight: 400;
+  position:fixed;
+  bottom:0;
+  right:0;
+  text-align: right;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+button {
+      width:220px;
+      border: none;
+      margin:20px auto;
+      height: 70px;
+      background:red;
+      animation:myfirst 4s;
+      -moz-animation:myfirst 4s infinite; /* Firefox */
+      -webkit-animation:myfirst 4s infinite; /* Safari and Chrome */
+      }
+
+      @-moz-keyframes myfirst /* Firefox */
+      {
+      0%   {background:red;}
+      50%  {background:#FFD700;}
+      75%  {background:#7b68ee;}
+      100%   {background:red;}
+      }
+
+      @-webkit-keyframes myfirst /* Firefox */
+      {
+      0%   {background:red;}
+      50%  {background:#FFD700;}
+      75%  {background:#7b68ee;}
+      100% {background:red;}
+      }
+
+@media only screen and (max-width: 950px) {
+  .color {
+    background-color: blue;
+    }
+
+  #message {
+    font-size: 1.5em;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 70px;
+  }
+
+  #theButton {
+      font-size: 1.3em;
+  }
+
+  button {
+    margin-right: auto;
+    color: red;
+    width:180px;
+    height: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  #message {
+    font-size: 1.3em;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 70px;
+  }
+
+  #theButton {
+    font-size: 1.2em;
+  }
+
+  button {
+    width:180px;
+    border: none;
+    height: 60px;
+  }
+
+}
